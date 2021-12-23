@@ -48,7 +48,7 @@ export default function Button(props) {
           to={props.href}
           className={className.join(" ")}
           style={props.style}
-          onclick={onClick}
+          onClick={onClick}
         >
           {props.children}
         </Link>
@@ -60,7 +60,7 @@ export default function Button(props) {
     <button
       className={className.join(" ")}
       style={props.style}
-      onclick={onClick}
+      onClick={onClick}
     >
       {props.children}
     </button>
@@ -69,7 +69,7 @@ export default function Button(props) {
 
 Button.propTypes = {
   type: propTypes.oneOf(["button", "link"]),
-  onclick: propTypes.func,
+  onClick: propTypes.func,
   href: propTypes.string,
   target: propTypes.string,
   className: propTypes.string,
