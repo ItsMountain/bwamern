@@ -18,7 +18,7 @@ export default class LandingPage extends Component {
   render() {
     return (
       <>
-        <Header {...this.props}></Header>
+        <Header {...this.props}/>
         <Hero refMostPicked={this.refMostPicked} data={landingPage.hero} />
         <MostPicked
           refMostPicked={this.refMostPicked}
