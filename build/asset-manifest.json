@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e613a955.css",
+    "main.js": "/static/js/main.ae0a10d9.js",
+    "static/js/988.5a33a5f8.chunk.js": "/static/js/988.5a33a5f8.chunk.js",
+    "static/media/img-hero.jpg": "/static/media/img-hero.9cf7cefe4392e8b85cbb.jpg",
+    "static/media/completed.jpg": "/static/media/completed.3ad0d056e1675b1cf555.jpg",
+    "static/media/img-hero-frame.jpg": "/static/media/img-hero-frame.8f7c753e4f04a480f656.jpg",
+    "static/media/testimonial-landingpages-frame.jpg": "/static/media/testimonial-landingpages-frame.13a9bec99512fa3c857d.jpg",
+    "static/media/logo-mandiri.jpg": "/static/media/logo-mandiri.228b086f5f9a49db4463.jpg",
+    "static/media/logo-bca.jpg": "/static/media/logo-bca.1540ce9b6ed60036c30b.jpg",
+    "static/media/star.svg": "/static/media/star.fc60b2697c1274cac503.svg",
+    "index.html": "/index.html",
+    "static/media/icon-calendar.svg": "/static/media/icon-calendar.206004ff442607c31f36200991c10fb8.svg",
+    "main.e613a955.css.map": "/static/css/main.e613a955.css.map",
+    "main.ae0a10d9.js.map": "/static/js/main.ae0a10d9.js.map",
+    "988.5a33a5f8.chunk.js.map": "/static/js/988.5a33a5f8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e613a955.css",
+    "static/js/main.ae0a10d9.js"
+  ]
+}
