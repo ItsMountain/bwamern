@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { withRouter } from 'react-router-dom'
+import { withRouter } from "react-router-dom";
 
 import propTypes from "prop-types";
 
@@ -33,7 +33,7 @@ class BookingForm extends Component {
 
   componentDidUpdate(prevProps, prevState) {
     const { data } = this.state;
-    
+
     if (prevState.data.date !== data.date) {
       const startDate = new Date(data.date.startDate);
       const endDate = new Date(data.date.endDate);
@@ -81,7 +81,7 @@ class BookingForm extends Component {
     const { data } = this.state;
     const { itemDetails } = this.props;
 
-      return (
+    return (
       <div className="card bordered" style={{ padding: "60px 80px" }}>
         <h4 className="mb-3">Start Booking</h4>
         <h5 className="h2 text-teal mb-4">
@@ -128,7 +128,6 @@ class BookingForm extends Component {
           Continue to Book
         </Button>
       </div>
-      
     );
   }
 }

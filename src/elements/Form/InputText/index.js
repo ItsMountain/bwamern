@@ -17,6 +17,11 @@ export default function Text(props) {
     errorResponse,
   } = props;
 
+  const [HasError, setHasError] = useState(null);
+  let pattern = "";
+  if (type === "email") pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (type === "tel") pattern = "[0-9]*"; // Phone Number
+
   const onChange = (event) => {
     const target = {
       target: {
@@ -36,11 +41,6 @@ export default function Text(props) {
       props.onChange(target);
     }
   };
-
-  const [HasError, setHasError] = useState(null);
-  let pattern = "";
-  if (type === "email") pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (type === "tel") pattern = "[0-9]*"; // Phone Number
 
   return (
     <div className={["input-text mb-3", outerClassName].join(" ")}>

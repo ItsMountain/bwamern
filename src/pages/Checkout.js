@@ -15,9 +15,7 @@ import BookingInformation from "parts/Checkout/BookingInformation";
 import Payment from "parts/Checkout/Payment";
 import Completed from "parts/Checkout/Completed";
 
-import { submitBooking } from 'store/actions/checkout';
-;
-
+import { submitBooking } from "store/actions/checkout";
 
 class Checkout extends Component {
   state = {
@@ -43,12 +41,12 @@ class Checkout extends Component {
 
   componentDidMount() {
     window.scroll(0, 0);
+	document.title = "Staycation | Checkout";										 
   }
 
   _Submit = (nextStep) => {
     const { data } = this.state;
     const { checkout } = this.props;
-
     const payload = new FormData();
     payload.append("firstName", data.firstName);
     payload.append("lastName", data.lastName);
@@ -72,7 +70,7 @@ class Checkout extends Component {
   render() {
     const { data } = this.state;
     const { checkout, page } = this.props;
-
+    
     if (!checkout)
     return (
       <div className="container">
@@ -139,7 +137,7 @@ class Checkout extends Component {
       <>
         <Header isCentered />
 
-        <Stepper steps={steps}>
+        <Stepper steps={steps} initialStep="bookingInformation">
           {(prevStep, nextStep, CurrentStep, steps) => (
             <>
               <Numbering
@@ -220,7 +218,7 @@ class Checkout extends Component {
                     isBlock
                     isPrimary
                     hasShadow
-                    href=""
+                    href={"/"}
                   >
                     Back to Home
                   </Button>
@@ -228,7 +226,6 @@ class Checkout extends Component {
               )}
             </>
           )}
-          );
         </Stepper>
       </>
     );
